@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RavenRock - Inteligência Artificial Aplicada</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="icon" href="https://www.ravenrock.com.br/favicon.ico" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-gray-950 fixed w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-indigo-400">RavenRock</h1>
+      <nav class="space-x-4">
+        <a href="#sobre" class="hover:text-indigo-300">Sobre</a>
+        <a href="#servicos" class="hover:text-indigo-300">Serviços</a>
+        <a href="#resultados" class="hover:text-indigo-300">Resultados</a>
+        <a href="#contato" class="hover:text-indigo-300">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="text-center pt-28 pb-20 bg-gradient-to-r from-indigo-700 to-purple-700">
+    <lottie-player 
+      src="https://assets7.lottiefiles.com/packages/lf20_c9cz2tlo.json"  
+      background="transparent"  
+      speed="1"  
+      style="width: 300px; height: 300px; margin: auto;"  
+      loop autoplay>
+    </lottie-player>
+    <h2 class="text-4xl font-bold mb-4">Inteligência Artificial Aplicada</h2>
+    <p class="max-w-2xl mx-auto text-lg">
+      Soluções personalizadas em IA para automação, aumento de lucro e desempenho empresarial.
+    </p>
+    <a href="#contato" class="mt-6 inline-block bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg">
+      Fale Conosco
+    </a>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="max-w-6xl mx-auto py-16 px-6">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="md:w-1/2">
+        <h3 class="text-3xl font-bold text-indigo-400 mb-6">Sobre a RavenRock</h3>
+        <p class="text-gray-300 leading-relaxed">
+          A RavenRock é especializada no desenvolvimento e aplicação de Inteligência Artificial para empresas de todos os portes.
+          Nossa missão é potencializar o crescimento e a eficiência por meio de tecnologias inovadoras que geram resultados reais e mensuráveis.
+        </p>
+      </div>
+      <div class="md:w-1/2">
+        <lottie-player 
+          src="https://assets5.lottiefiles.com/packages/lf20_w51pcehl.json"  
+          background="transparent"  
+          speed="1"  
+          style="width: 100%; height: 300px;"  
+          loop autoplay>
+        </lottie-player>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-8 text-center">Nossos Serviços</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg reveal">
+          <h4 class="text-xl font-semibold mb-2">IA para Autoatendimento</h4>
+          <p class="text-gray-400">Chatbots inteligentes para atendimento rápido e eficiente.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg reveal">
+          <h4 class="text-xl font-semibold mb-2">Automação Administrativa</h4>
+          <p class="text-gray-400">Soluções que eliminam tarefas repetitivas e otimizam tempo.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg reveal">
+          <h4 class="text-xl font-semibold mb-2">Seleção de Currículos com IA</h4>
+          <p class="text-gray-400">Filtragem inteligente de candidatos para processos seletivos.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg reveal">
+          <h4 class="text-xl font-semibold mb-2">Controle de Acesso Online</h4>
+          <p class="text-gray-400">Classificação e bloqueio de conteúdo em tempo real.</p>
+        </div>
+        <div class="bg-gray-900 p-6 rounded-xl shadow-lg reveal">
+          <h4 class="text-xl font-semibold mb-2">IA Personalizada</h4>
+          <p class="text-gray-400">Soluções sob medida com foco em soberania tecnológica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section id="resultados" class="py-16 px-6 text-center bg-gray-900">
+    <h3 class="text-3xl font-bold text-indigo-400 mb-8">Nossos Resultados</h3>
+    <div class="flex flex-col md:flex-row justify-center gap-12">
+      <div class="reveal">
+        <span id="empresas" class="text-5xl font-bold text-green-400">0</span>
+        <p class="text-gray-300 mt-2">Empresas Ajudadas</p>
+      </div>
+      <div class="reveal">
+        <span id="economia" class="text-5xl font-bold text-yellow-400">R$ 0</span>
+        <p class="text-gray-300 mt-2">Economia Anual Gerada</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="bg-gray-800 py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-indigo-400 mb-6">Fale Conosco</h3>
+      <p class="mb-6">Entre em contato pelo WhatsApp ou pelas nossas redes sociais.</p>
+      <a href="https://wa.me/5541998534645" target="_blank" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg inline-block text-lg">
+        WhatsApp
+      </a>
+      <div class="flex justify-center space-x-6 mt-8 text-lg">
+        <a href="https://www.linkedin.com/company/ravenrock-brasil" target="_blank">LinkedIn</a>
+        <a href="https://x.com/ravenrockbrasil" target="_blank">X (Twitter)</a>
+        <a href="https://www.instagram.com/ravenrock_brasil" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/16HAmtQy97/" target="_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@ravenrock_brasil" target="_blank">TikTok</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-gray-950 py-6 text-center text-gray-500 text-sm">
+    © 2025 RavenRock - Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Efeitos ScrollReveal
+    ScrollReveal().reveal('.reveal', { 
+      distance: '50px', 
+      duration: 1000, 
+      easing: 'ease-out', 
+      origin: 'bottom',
+      interval: 200 
+    });
+
+    // Contadores animados
+    function animateValue(id, start, end, duration, prefix = "", suffix = "") {
+      let obj = document.getElementById(id);
+      let range = end - start;
+      let startTime = null;
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        let progress = Math.min((timestamp - startTime) / duration, 1);
+        obj.textContent = prefix + Math.floor(progress * range + start).toLocaleString('pt-BR') + suffix;
+        if (progress < 1) window.requestAnimationFrame(step);
+      }
+      window.requestAnimationFrame(step);
+    }
+
+    // Iniciar contadores apenas quando a seção entrar na tela
+    const resultadosSection = document.getElementById("resultados");
+    let counted = false;
+    window.addEventListener("scroll", () => {
+      const rect = resultadosSection.getBoundingClientRect();
+      if (!counted && rect.top < window.innerHeight) {
+        animateValue("empresas", 0, 120, 2000);
+        animateValue("economia", 0, 3500000, 2500, "R$ ");
+        counted = true;
+      }
+    });
+  </script>
+
+</body>
+                                                                           </html>
